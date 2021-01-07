@@ -60,7 +60,9 @@ setuptools.setup(
               if 'tf_pose' in pkg_name],
     ext_modules=[EXT],
     package_data={'tf_pose_data': ['graph/cmu/graph_opt.pb',
-                                   'graph/mobilenet_thin/graph_opt.pb']},
+                                   'graph/mobilenet_thin/graph_opt.pb',
+                                   'graph/mobilenet_v2_small/graph_opt.pb',
+                                   'graph/mobilenet_v2_large/graph_opt.pb']},
     py_modules=[
         "pafprocess"
     ],
